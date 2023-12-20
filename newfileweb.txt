@@ -1,0 +1,4 @@
+463864462,benedriss,mohammed,24-07-2000,benmo@gmail.com,9,30,22,61
+1603711396,Bejaoui,Syrine,11-11-2001,syrine@gmail.com,0,0,100,100
+1133405606,Nefzi,Hyba,21-09-2002,hibanefzi@gmail.com,0,90,9,99
+861234968,Messi,Lionel,16-07-1987,lionel@gmail.com,12,55,1,68

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="450.0" style="-fx-background-color: #b0bec4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetgenuis.loginAdminController">
+   <children>
+      <Label layoutX="190.0" layoutY="38.0" prefHeight="55.0" prefWidth="216.0" text="Espace Admin">
+         <font>
+            <Font name="Arial Black" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="178.0" prefHeight="26.0" prefWidth="154.0" text="Adresse mail">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="288.0" prefHeight="30.0" prefWidth="142.0" text="Mot de passe">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Label>
+      <TextField fx:id="btn1" layoutX="217.0" layoutY="178.0" prefHeight="26.0" prefWidth="170.0" />
+      <TextField fx:id="btn2" layoutX="216.0" layoutY="290.0" prefHeight="26.0" prefWidth="169.0" />
+      <Button fx:id="btnconnecter" layoutX="243.0" layoutY="376.0" mnemonicParsing="false" onAction="#switch1" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: black;" text="Connecter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <ImageView fx:id="admin" fitHeight="105.0" fitWidth="148.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admino-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

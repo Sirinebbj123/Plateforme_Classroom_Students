@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetgenuis.statistiquesController">
+   <top>
+      <MenuBar prefHeight="35.0" prefWidth="712.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleshowbarchat" text="Show bar chart" />
+              <MenuItem mnemonicParsing="false" onAction="#handleclose" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleshowpiechart" text="Show Pie chart" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleshowbarchat" text="caractéristiques" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#handeupdate" text="update">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handeupdate" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane prefHeight="486.0" prefWidth="671.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutY="2.0" prefHeight="612.0" prefWidth="743.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane layoutX="481.0" layoutY="27.0" prefHeight="128.0" prefWidth="232.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setOnAction" prefHeight="72.0" prefWidth="206.0" text="voir totale apprenant">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Button>
+                        <Label fx:id="tot" layoutX="94.0" layoutY="106.0" text="TOTALE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="oki" layoutX="16.0" layoutY="188.0" prefHeight="298.0" prefWidth="659.0" style="-fx-background-color: white;">
+                      <TableView fx:id="table1" layoutX="9.0" layoutY="-7.0" onMouseClicked="#rowClicked" prefHeight="69.0" prefWidth="640.0" style="-fx-background-color: white;">
+                          <columns>
+                              <TableColumn fx:id="idcol" prefWidth="68.79998779296875" text="id" />
+                              <TableColumn fx:id="prencol1" prefWidth="73.5999755859375" text="prenom" />
+                              <TableColumn fx:id="nomcol1" prefWidth="67.199951171875" text="nom" />
+                           <TableColumn fx:id="dncol1" prefWidth="138.40000915527344" text="date de naissance" />
+                           <TableColumn fx:id="amcol1" minWidth="0.0" prefWidth="85.0" text="adresse mail" />
+                           <TableColumn fx:id="colquiz11" minWidth="0.0" prefWidth="42.0" text="q1" />
+                           <TableColumn fx:id="colquiz21" minWidth="0.0" prefWidth="42.0" text="q2" />
+                           <TableColumn fx:id="colquiz31" minWidth="0.0" prefWidth="42.0" text="q3" />
+                           <TableColumn fx:id="colquizsomme1" minWidth="0.0" text="tot point" />
+                          </columns>
+                      </TableView>
+                     <TableView fx:id="table2" layoutX="6.0" layoutY="96.0" onMouseClicked="#rowClicked" prefHeight="68.0" prefWidth="646.0" style="-fx-background-color: white;">
+                        <columns>
+                           <TableColumn fx:id="idcol2" prefWidth="68.79998779296875" text="id" />
+                           <TableColumn fx:id="prencol2" prefWidth="73.5999755859375" text="prenom" />
+                           <TableColumn fx:id="nomcol2" prefWidth="93.5999755859375" text="nom" />
+                           <TableColumn fx:id="dncol2" prefWidth="112.0" text="date de naissance" />
+                           <TableColumn fx:id="amcol2" minWidth="0.0" prefWidth="85.0" text="adresse mail" />
+                           <TableColumn fx:id="colquiz12" minWidth="0.0" prefWidth="42.0" text="q1" />
+                           <TableColumn fx:id="colquiz22" minWidth="0.0" prefWidth="42.0" text="q2" />
+                           <TableColumn fx:id="colquiz32" minWidth="0.0" prefWidth="42.0" text="q3" />
+                           <TableColumn fx:id="colquizsomme2" minWidth="0.0" prefWidth="84.4000244140625" text="tot point" />
+                        </columns>
+                     </TableView>
+                     <TableView fx:id="table3" layoutX="6.0" layoutY="214.0" onMouseClicked="#rowClicked" prefHeight="70.0" prefWidth="646.0" style="-fx-background-color: white;">
+                        <columns>
+                           <TableColumn fx:id="idcol3" prefWidth="68.79998779296875" text="id" />
+                           <TableColumn fx:id="prencol3" prefWidth="73.5999755859375" text="prenom" />
+                           <TableColumn fx:id="nomcol3" prefWidth="93.5999755859375" text="nom" />
+                           <TableColumn fx:id="dncol3" prefWidth="112.0" text="date de naissance" />
+                           <TableColumn fx:id="amcol3" minWidth="0.0" prefWidth="85.0" text="adresse mail" />
+                           <TableColumn fx:id="colquiz13" minWidth="0.0" prefWidth="42.0" text="q1" />
+                           <TableColumn fx:id="colquiz23" minWidth="0.0" prefWidth="42.0" text="q2" />
+                           <TableColumn fx:id="colquiz33" minWidth="0.0" prefWidth="42.0" text="q3" />
+                           <TableColumn fx:id="colquizsomme3" minWidth="0.0" prefWidth="84.4000244140625" text="tot point" />
+                        </columns>
+                     </TableView>
+                     <Label layoutX="305.0" layoutY="174.0" text="web">
+                        <font>
+                           <Font name="System Bold" size="23.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="256.0" layoutY="62.0" text="Conception">
+                        <font>
+                           <Font name="System Bold" size="23.0" />
+                        </font>
+                     </Label>
+                     <children>
+
+                     </children></Pane>
+                  <TableView fx:id="table4" layoutX="25.0" layoutY="525.0" onMouseClicked="#rowClicked" prefHeight="73.0" prefWidth="646.0" style="-fx-background-color: white;">
+                     <columns>
+                        <TableColumn fx:id="idcol4" prefWidth="68.79998779296875" text="id" />
+                        <TableColumn fx:id="prencol4" prefWidth="73.5999755859375" text="prenom" />
+                        <TableColumn fx:id="nomcol4" prefWidth="93.5999755859375" text="nom" />
+                        <TableColumn fx:id="dncol4" prefWidth="112.0" text="date de naissance" />
+                        <TableColumn fx:id="amcol4" minWidth="0.0" prefWidth="85.0" text="adresse mail" />
+                        <TableColumn fx:id="colquiz14" minWidth="0.0" prefWidth="42.0" text="q1" />
+                        <TableColumn fx:id="colquiz24" minWidth="0.0" prefWidth="42.0" text="q2" />
+                        <TableColumn fx:id="colquiz34" minWidth="0.0" prefWidth="42.0" text="q3" />
+                        <TableColumn fx:id="colquizsomme4" minWidth="0.0" prefWidth="84.4000244140625" text="tot point" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="324.0" layoutY="138.0" text="Java">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="266.0" layoutY="486.0" text="Base de données">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" text="Total des apprenatnts">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="stat" fitHeight="161.0" fitWidth="210.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@statttttttttttttttttttttt-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="237.0" layoutY="27.0" prefHeight="69.0" prefWidth="217.0" text="Statistiques" textFill="#0026ff">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

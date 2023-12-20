@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="565.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetgenuis.CourController">
+   <children>
+      <Button fx:id="javabtn" contentDisplay="TOP" layoutX="104.0" layoutY="136.0" mnemonicParsing="false" onAction="#opo" prefHeight="142.0" prefWidth="250.0">
+         <graphic>
+            <ImageView fx:id="javac" fitHeight="87.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/projetgenuis/java-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="conceptionbtn" contentDisplay="TOP" layoutX="420.0" layoutY="134.0" mnemonicParsing="false" onAction="#opo" prefHeight="142.0" prefWidth="230.0">
+         <graphic>
+            <ImageView fx:id="cncpc" fitHeight="97.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/projetgenuis/conception-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="bddbtn" contentDisplay="TOP" layoutX="411.0" layoutY="313.0" mnemonicParsing="false" onAction="#opo" prefHeight="142.0" prefWidth="230.0">
+         <graphic>
+            <ImageView fx:id="bddc" fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/projetgenuis/basedd-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="webbtn" contentDisplay="TOP" layoutX="101.0" layoutY="311.0" mnemonicParsing="false" onAction="#opo" prefHeight="142.0" prefWidth="258.0">
+         <graphic>
+            <ImageView fx:id="webc" fitHeight="119.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/projetgenuis/webb-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="187.0" layoutY="14.0" text="Gestion Des Cours" textFill="#2436ff">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
